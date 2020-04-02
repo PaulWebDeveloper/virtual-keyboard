@@ -67,7 +67,15 @@ textarea {
 }
 
 .key__modifier:hover {
-  background: #dfea2d;
+  color: #fff;
+  background: #8200f9;
+}
+
+.key__modifier.active {
+  color: #fff;
+  background: #8200f9;
+  box-shadow: 0 2px 25px rgba(128, 73, 249, 0.5);
+  border-radius: 10px;
 }
 
 .key__regular {
@@ -77,7 +85,13 @@ textarea {
 }
 
 .key__regular:hover {
-  background: #637da5;
+  background: #ff0081;
+}
+
+.key__regular.active {
+  background: #ff0081;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  border-radius: 10px;
 }
 
 .row:nth-child(1) div:last-child {
