@@ -19,9 +19,6 @@ let keyboardRusShift = renderKeyboard(keysRusShift);
 let keyboardEng = renderKeyboard(keysEng);
 let keyboardEngShift = renderKeyboard(keysEngShift);
 
-export {
-  keyboardRus,
-  keyboardRusShift,
-  keyboardEng,
-  keyboardEngShift
-};
+let languages = [keyboardEng, keyboardEngShift, keyboardRus, keyboardRusShift];
+
+export default languages;

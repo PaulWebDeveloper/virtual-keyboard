@@ -3,7 +3,7 @@ const mouseUp = (event) => {
     if (event.target == el) {
       setTimeout(function(){
         el.classList.remove('active');
-      },300);
+      },100);
     }
   });
 };
