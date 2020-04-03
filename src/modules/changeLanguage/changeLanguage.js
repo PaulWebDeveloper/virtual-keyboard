@@ -3,6 +3,11 @@ import loadingKeyboard from './../createKeyboard/loadingKeyboard';
 
 let ctrl = false;
 let currentLanguage = 0;
+let curLangStor = ['eng', 'rus'];
+
+if ('rus' == localStorage.getItem('language')) {
+  currentLanguage += 2;
+}
 
 const changeLanguage = () => {
   window.addEventListener('keydown', (e) => {
@@ -27,6 +32,7 @@ const changeLanguage = () => {
         currentLanguage = 0;
       }
       loadingKeyboard(languages[currentLanguage]);
+      localStorage.setItem('language', curLangStor[currentLanguage / 2]);
       ctrl = false;
     }
   });
