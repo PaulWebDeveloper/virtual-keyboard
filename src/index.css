@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: Ubuntu-Regular, Tahoma, sans-serif;
+  font-family: Tahoma, Verdana, sans-serif;
   background: #f0f8ff;
 }
 
@@ -34,7 +34,7 @@ textarea {
   height: 330px;
   margin-bottom: 20px;
   font-size: 20px;
-  font-family: SourceCodePro-Regular, Tahoma, sans-serif;
+  font-family: Tahoma, Verdana sans-serif;
   color: #fff;
   background: #1a242f;
   resize: none;
@@ -133,4 +133,17 @@ textarea {
 
 .row:nth-child(5) div:nth-child(4) {
   width: 362px;
+}
+
+.changeLanguage {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #505050;
+}
+
+.changeLanguage span {
+  color: #365a7d;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
 }

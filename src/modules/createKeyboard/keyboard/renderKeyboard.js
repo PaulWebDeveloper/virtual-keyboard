@@ -13,6 +13,8 @@ const renderKeyboard = keyboard => {
     virtualKeyboard += row;
   }
 
+  virtualKeyboard +='<div class="changeLanguage">Change language: <span>Ctrl + Shift</span></div>';
+
   return virtualKeyboard;
 };
 
