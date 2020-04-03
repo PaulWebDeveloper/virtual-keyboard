@@ -1,6 +1,6 @@
-const keyUp = (event) => {
+const keyUp = () => {
   document.querySelectorAll('.row .key').forEach(el => {
-    if (event.key == el.innerHTML) {
+    if (el.innerHTML !== 'Shift') {
       setTimeout(function() {
         el.classList.remove('active');
       },300);
