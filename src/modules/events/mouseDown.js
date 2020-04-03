@@ -1,4 +1,4 @@
-import {Backspace, Delete} from './keysEvents/remove';
+import removeLetter from './keysEvents/removeLetter';
 
 const mouseDown = (event) => {
   let textarea = document.querySelector('textarea');
@@ -14,7 +14,7 @@ const mouseDown = (event) => {
 
   switch (event.target.innerHTML) {
     case 'Backspace': 
-      textarea = Backspace(textarea);
+      textarea = removeLetter(textarea, -1, 0);
       break;
 
     case 'Tab': 
@@ -22,7 +22,7 @@ const mouseDown = (event) => {
       break;
 
     case 'Del': 
-      textarea = Delete(textarea);
+      textarea = removeLetter(textarea, 0, 1);
       break;
 
     case 'Enter': 

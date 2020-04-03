@@ -28,23 +28,14 @@ const resetCursor = (textElement, currentPosition) => {
   } 
 };
 
-const Backspace = (textarea) => {
+const removeLetter = (textarea, shiftLeft, shiftRight) => {
   let currentPosition = getCaret(textarea);    
   let text = textarea.value;
-  textarea.value = text.substr(0, currentPosition - 1) + text.substr(currentPosition, text.length);
-  resetCursor(textarea, currentPosition - 1);
+  textarea.value = text.substr(0, currentPosition + shiftLeft);
+  textarea.value += text.substr(currentPosition + shiftRight, text.length);
+  resetCursor(textarea, currentPosition + shiftLeft);
   return textarea;
 };
 
-const Delete = (textarea) => {
-  let currentPosition = getCaret(textarea);    
-  let text = textarea.value;
-  textarea.value = text.substr(0, currentPosition) + text.substr(currentPosition + 1, text.length);
-  resetCursor(textarea, currentPosition);
-  return textarea;
-};
-
-export {
-  Backspace,
-  Delete
-};
+export default removeLetter;
+ 

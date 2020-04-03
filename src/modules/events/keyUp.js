@@ -3,7 +3,7 @@ const keyUp = (event) => {
       if (event.key == el.innerHTML) {
       setTimeout(function(){
       el.classList.remove('active');
-      },500);
+      },300);
     }
   });
 };
