@@ -5,7 +5,7 @@
   "private": "true",
   "scripts": {
     "start": "webpack-dev-server",
-    "lint": "./node_modules/.bin/eslint ./src",
+    "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
@@ -35,5 +35,6 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "main": ".eslintrc.js"
 }
