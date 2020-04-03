@@ -22,8 +22,8 @@ window.addEventListener('keyup', (e) => {
 
 const KEYBOARD = document.querySelector('.keyboard');
 
-window.addEventListener('keydown', (e) => keyDown(e))
-window.addEventListener('keyup', (e) => keyUp(e))
+window.addEventListener('keydown', (e) => keyDown(e));
+window.addEventListener('keyup', (e) => keyUp(e));
 
 KEYBOARD.addEventListener('mousedown', (e) => mouseDown(e));
 KEYBOARD.addEventListener('mouseup', (e) => mouseUp(e));

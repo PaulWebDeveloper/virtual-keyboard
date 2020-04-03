@@ -4,6 +4,6 @@ const keyboardPattern = {
   row_3: ['Caps Lock', '', '', '', '', '', '', '', '', '', '', '', 'Enter' ],
   row_4: ['Shift', '', '', '', '', '', '', '', '', '', '', 'Up' ,'Shift' ],
   row_5: ['Ctrl', 'Win', 'Alt', ' ', 'Alt', 'Lt', 'Dn', 'Rt', 'Ctrl']
-}
+};
 
 export default keyboardPattern;

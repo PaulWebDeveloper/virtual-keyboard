@@ -8,7 +8,7 @@ const getCaret = (str) => {
     if (range == null) return 0;
 
     let rangeStr = str.createTextRange(),
-        rangeClone = rangeStr.duplicate();
+      rangeClone = rangeStr.duplicate();
     rangeStr.moveToBookmark(range.getBookmark());
     rangeClone.setEndPoint('EndToStart', rangeStr);
 

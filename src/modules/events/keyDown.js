@@ -6,8 +6,8 @@ const keyDown = (event) => {
   });
 
   document.querySelectorAll('.row .key__modifier').forEach(el => {
-    if (event.code == 'Tab' && el.innerHTML == 'Tab' || 
-      event.code == 'CapsLock' && el.innerHTML == 'Caps Lock' || 
+    if (event.code == 'Tab' && el.innerHTML == 'Tab' ||
+      event.code == 'CapsLock' && el.innerHTML == 'Caps Lock' ||
       event.code == 'ShiftLeft' && el.innerHTML == 'Shift' ||
       event.code == 'ShiftRight' && el.innerHTML == 'Shift' ||
       event.code == 'Backspace' && el.innerHTML == 'Backspace' ||
@@ -22,7 +22,7 @@ const keyDown = (event) => {
       event.code == 'Win' && el.innerHTML == 'Win' ||
       event.code == 'Altleft' && el.innerHTML == 'Alt' ||
       event.code == 'AltRight' && el.innerHTML == 'Alt') {
-        el.classList.add('active');
+      el.classList.add('active');
     }    
   });
 };

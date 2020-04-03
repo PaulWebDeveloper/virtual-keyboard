@@ -6,7 +6,7 @@ const renderKeyboard = keyboard => {
     for (let i = 0; i < keyboard[key].length; i++) {
       (keyboard[key][i].length > 1)
       ? row += '<div class="key key__modifier">' + keyboard[key][i] + '</div>'
-      : row += '<div class="key key__regular">' + keyboard[key][i] + '</div>'
+      : row += '<div class="key key__regular">' + keyboard[key][i] + '</div>';
     }
     row += '</div>';
 

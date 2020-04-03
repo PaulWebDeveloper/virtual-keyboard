@@ -13,50 +13,51 @@ const mouseDown = (event) => {
   });
 
   switch (event.target.innerHTML) {
-    case 'Backspace': 
-      textarea = removeLetter(textarea, -1, 0);
-      break;
 
-    case 'Tab': 
-      textarea.value += '    ';
-      break;
+  case 'Backspace': 
+    textarea = removeLetter(textarea, -1, 0);
+    break;
 
-    case 'Del': 
-      textarea = removeLetter(textarea, 0, 1);
-      break;
+  case 'Tab': 
+    textarea.value += '    ';
+    break;
 
-    case 'Enter': 
-      textarea.value += '\n';
-      break;
+  case 'Del': 
+    textarea = removeLetter(textarea, 0, 1);
+    break;
 
-    case 'Caps Lock': 
-      break;
+  case 'Enter': 
+    textarea.value += '\n';
+    break;
 
-    case 'Shift': 
-      break;
+  case 'Caps Lock': 
+    break;
 
-    case 'Ctrl': 
-      break;
+  case 'Shift': 
+    break;
 
-    case 'Win': 
-      break;
+  case 'Ctrl': 
+    break;
 
-    case 'Alt': 
-      break;
+  case 'Win': 
+    break;
 
-    case 'Up': 
-      break;
+  case 'Alt': 
+    break;
 
-    case 'Lt': 
-      break;
+  case 'Up': 
+    break;
 
-    case 'Dn': 
-      break;
+  case 'Lt': 
+    break;
 
-    case 'Rt': 
-      break;
+  case 'Dn': 
+    break;
 
-    default: break;
+  case 'Rt': 
+    break;
+
+  default: break;
   }
 };
 
