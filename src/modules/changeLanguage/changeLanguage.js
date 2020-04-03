@@ -22,6 +22,14 @@ const changeLanguage = () => {
     }
   });
 
+  document.querySelector('.keyboard').addEventListener('mousedown', () => {
+    loadingKeyboard(languages[currentLanguage + 1]);
+  });
+
+  document.querySelector('.keyboard').addEventListener('mouseup', () => {
+    loadingKeyboard(languages[currentLanguage]);
+  });
+
   window.addEventListener('keydown', (e) => {
     if (e.key == 'Control') {
       ctrl = true;

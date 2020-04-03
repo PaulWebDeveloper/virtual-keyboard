@@ -14,47 +14,35 @@ const mouseDown = (event) => {
 
   switch (event.target.innerHTML) {
 
-  case 'Backspace': 
+  case 'Backspace':
     textarea = removeLetter(textarea, -1, 0);
     break;
 
-  case 'Tab': 
+  case 'Tab':
     textarea.value += '    ';
     break;
 
-  case 'Del': 
+  case 'Del':
     textarea = removeLetter(textarea, 0, 1);
     break;
 
-  case 'Enter': 
+  case 'Enter':
     textarea.value += '\n';
     break;
 
-  case 'Caps Lock': 
+  case 'Caps Lock':
     break;
 
-  case 'Shift': 
+  case 'Up':
     break;
 
-  case 'Ctrl': 
+  case 'Lt':
     break;
 
-  case 'Win': 
+  case 'Dn':
     break;
 
-  case 'Alt': 
-    break;
-
-  case 'Up': 
-    break;
-
-  case 'Lt': 
-    break;
-
-  case 'Dn': 
-    break;
-
-  case 'Rt': 
+  case 'Rt':
     break;
 
   default: break;
