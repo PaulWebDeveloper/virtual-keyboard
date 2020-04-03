@@ -4,6 +4,7 @@ const keyDown = (event) => {
       el.classList.add('active');
     } 
   });
+
   document.querySelectorAll('.row .key__modifier').forEach(el => {
     if (event.code == 'Tab' && el.innerHTML == 'Tab' || 
       event.code == 'CapsLock' && el.innerHTML == 'Caps Lock' || 
