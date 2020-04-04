@@ -5,7 +5,7 @@ let ctrl = false;
 let currentLanguage = 0;
 let curLangStor = ['eng', 'rus'];
 
-if ('rus' == localStorage.getItem('language')) {
+if ('rus' == localStorage.getItem('lang')) {
   currentLanguage += 2;
 }
 
@@ -23,11 +23,15 @@ const changeLanguage = () => {
   });
 
   document.querySelector('.keyboard').addEventListener('mousedown', () => {
-    loadingKeyboard(languages[currentLanguage + 1]);
+    if (event.target == 'Shift') {
+      loadingKeyboard(languages[currentLanguage + 1]);
+    }
   });
 
   document.querySelector('.keyboard').addEventListener('mouseup', () => {
-    loadingKeyboard(languages[currentLanguage]);
+    if (event.target == 'Shift') {
+      loadingKeyboard(languages[currentLanguage]);
+    }
   });
 
   window.addEventListener('keydown', (e) => {
@@ -40,7 +44,7 @@ const changeLanguage = () => {
         currentLanguage = 0;
       }
       loadingKeyboard(languages[currentLanguage]);
-      localStorage.setItem('language', curLangStor[currentLanguage / 2]);
+      localStorage.setItem('lang', curLangStor[currentLanguage / 2]);
       ctrl = false;
     }
   });
