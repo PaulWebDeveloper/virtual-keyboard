@@ -2,13 +2,18 @@
 
 [Demo version](https://paulwebdeveloper.github.io/virtual-keyboard/)
 
+Сначала клонируем репозиторий
+
+>git clone https://github.com/PaulWebDeveloper/virtual-keyboard
+
+затем переходим в папку virtual-keyboard
+  
+>cd virtual-keyboard
+
 Для запуска приложения установить [Node.js](https://nodejs.org/en/) не ниже 12 версии, набрать команду:
 
   >npm install
   
-  затем перейти в папку virtual-keyboard
-  >cd virtual-keyboard
-
 Для сборки приложения использовать команду, сборка произойдет в ./dist:
 
   >npm run build
